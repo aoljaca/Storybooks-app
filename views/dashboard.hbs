@@ -20,12 +20,13 @@
                 <a href="/stories/edit/{{_id}}" class="btn btn-float">
                     <i class="fas fa-edit"></i>
                 </a>
-                <form action="/stories/{{_id}}" method="POST">
+                <form action="/stories/{{_id}}" method="POST" id="form">
                     <input type="hidden" name="_method" value="DELETE">
                     <button type="submit" class="btn red">
                         <i class="fas fa-trash"></i>
                     </button>
                 </form>
+                <img src="{{user.image}}" alt="">
             </td>
         </tr>
         {{/each}}
