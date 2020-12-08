@@ -77,8 +77,8 @@ app.use(function (req, res, next) {
 })
 
 // routes
-app.use('/', require('./routes/index'))
-app.use('/auth', require('./routes/auth'))
-app.use('/stories', require('./routes/stories'))
+app.use('story-books-app-andrej.herokuapp.com/', require('./routes/index'))
+app.use('story-books-app-andrej.herokuapp.com/auth', require('./routes/auth'))
+app.use('story-books-app-andrej.herokuapp.com/stories', require('./routes/stories'))
 // start server
 app.listen(PORT, console.log(`Running in ${process.env.NODE_ENV} on ${PORT}`))
